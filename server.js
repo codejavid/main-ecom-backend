@@ -15,15 +15,15 @@ connectDB();
 
 const app = express();
 
-app.use(cors(
-  {
-    origin:[
+app.use( cors({
+    origin: [
       "http://localhost:5173",
       "https://main-ecom-frontend-hj6v.vercel.app"
     ],
-    credentials:true
-  }
-))
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  }))
 app.use(express.json());
 
 app.get("/", (req, res) => {
