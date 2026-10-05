@@ -18,8 +18,8 @@ const app = express();
 app.use(cors(
   {
     origin:[
-      "http://localhost:5173/",
-      "https://main-ecom-frontend-hj6v.vercel.app/"
+      "http://localhost:5173",
+      "https://main-ecom-frontend-hj6v.vercel.app"
     ],
     credentials:true
   }
