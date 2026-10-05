@@ -19,7 +19,7 @@ app.use(cors(
   {
     origin:[
       "http://localhost:5173/",
-      "https://main-ecom-backend.onrender.com"
+      "https://main-ecom-frontend-hj6v.vercel.app/"
     ],
     credentials:true
   }
